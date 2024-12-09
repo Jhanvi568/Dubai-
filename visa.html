@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Requirements</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .topnav {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .topnav h1 {
+        font-size: 30px;
+        padding: 20px 25px;
+        display: block;
+    }
+
+
+    ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+
+        ul li {
+            display: inline-block; 
+            position: relative; 
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #000000;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+        ul li ul.dropdown {
+            width: 100%; 
+            background: #ce96ff; 
+            position: absolute; 
+            z-index: 999;
+            display: none; 
+        }
+
+        ul li a:hover {
+            background: #bb6eff; 
+        }
+
+        ul li:hover ul.dropdown {
+            display: block; 
+        }
+
+        .signin {
+            left: 610px;
+        }
+
+        .photos {
+            position: absolute;
+            margin: 20px 0; 
+            top: 237px;
+            right: 20px; /* Align images to the right */
+        }
+
+        .photo {
+            display: block; /* Changed to block to show images */
+            width: 100%;
+            height: 255px; /* Increased height */
+            overflow: hidden; /* Ensure overflow is hidden */
+            margin-bottom: 20px; /* Added space underneath each image */
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .content {
+        max-width: 800px;
+        margin: 20px 0; 
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        user-select: none; 
+        font-size: 20px;
+    }
+
+        .title {
+            padding: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+    <h1 class="title">Visa Requirements</h1>
+    
+    <div class="content"> 
+        <h2>1. Tourist Visa</h2>
+        <li><strong>Short-term Visa (30 days):</strong> Eligibility: Many nationalities can apply. Fee: Approximately 300 AED. Extension: Can be extended for an additional 30 days for about 600 AED.</li>
+        <li><strong>Long-term Visa (90 days):</strong> Eligibility: Available for certain nationalities. Fee: Approximately 1,000 AED.</li>
+
+        <h2>2. Visa on Arrival</h2>
+        <li><strong>Eligibility:</strong> Citizens of select countries (e.g., USA, UK, Canada, EU members). Duration: Valid for up to 30 days.</li>
+        <li><strong>Fee:</strong> Approximately 100 AED for a 30-day extension if needed.</li>
+
+        <h2>3. Transit Visa</h2>
+        <li><strong>Eligibility:</strong> For travelers transiting through Dubai for more than 8 hours but less than 96 hours.</li>
+        <li><strong>Fee:</strong> Approximately 100 AED.</li>
+        <li><strong>Requirements:</strong> Must have a confirmed onward ticket.</li>
+
+        <h2>4. Business Visa</h2>
+        <li><strong>Eligibility:</strong> Requires a local sponsor (usually a company in Dubai). Fee: Approximately 1,200 AED for a 30-day visa; longer durations may vary based on sponsorship.</li>
+        <li><strong>Fee:</strong> Approximately 100 AED for a 30-day extension if needed.</li>
+
+        <h2>5. Residence Visa</h2>
+        <li><strong>Eligibility:</strong> For those planning to live in Dubai, usually tied to employment or family sponsorship.</li>
+        <li><strong>Fee:</strong> Ranges from 3,000 AED to 7,000 AED depending on the duration and type of residency.</li>
+
+        <h2>6. Student Visa</h2>
+        <p>Eligibility: For students enrolled in accredited educational institutions in Dubai.</p>
+        <li><strong>Fee:</strong> Approximately 1,200 AED annually, plus additional costs for medical insurance.</li>
+
+        <h2>7. Exemptions and Special Cases</h2>
+        <p>Some nationalities may have different requirements or exemptions based on bilateral agreements. Always check if your nationality qualifies for special conditions.</p>
+
+        <h2>Required Documents</h2>
+        <li>Valid passport with at least six months’ validity.</li>
+        <li>Passport-sized photographs.</li>
+        <li>Proof of accommodation (hotel booking or invitation letter).</li>
+        <li>Proof of funds (bank statements).</li>
+        <li>Return flight ticket.</li>
+
+        <h2>Application Process</h2>
+        <p>Applications can be submitted online, through travel agencies, or directly at UAE embassies and consulates. Processing times may vary from a few hours to several days.</p>
+
+        <h2>Conclusion</h2>
+        <p>Always check the latest regulations from official sources, as visa rules and fees can change. It’s advisable to prepare your application in advance to avoid any last-minute issues.</p>
+    </div>
+
+    
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/The-Latest-updates-on-tourists-visa-residency-visas-in-the-UAE-Cover-03-06.jpg" alt="photo 1">
+        </div>
+        <a href="https://u.ae/en/information-and-services/visa-and-emirates-id/visit-visas#:~:text=Visit%20visas,Portal%20of%20the%20UAE%20Government" target="_blank">
+            <div class="photo" id="p2">
+                <img src="https://u.ae/-/media/Images-2022/Images-October-2022/Green-visa-for-work-En.jfif" alt="photo 2">
+            </div>
+        </a>
+        <div class="photo" id="p3">
+            <img src="https://www.applydubaivisa.com/wp-content/uploads/2015/09/dubai-visa-cancellation.jpg" alt="photo 3">
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

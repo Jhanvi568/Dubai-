@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .topnav {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .topnav h1 {
+        font-size: 30px;
+        padding: 20px 25px;
+        display: block;
+    }
+
+    
+    ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+    ul li ul.dropdown {
+        width: 100%; 
+        background: #ce96ff; 
+        position: absolute; 
+        z-index: 999;
+        display: none; 
+    }
+
+    ul li a:hover {
+        background: #bb6eff; 
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+
+    .signin {
+        left: 610px;
+    }
+
+    .photos {
+        position: absolute;
+        margin: 20px 0; 
+        top: 237px;
+        right: 20px; 
+    }
+
+    .photo {
+        display: block;
+        width: 100%;
+        height: 335px;
+        overflow: hidden;
+        margin-bottom: 20px; 
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px 0; 
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        user-select: none; 
+        font-size: 20px;
+    }
+
+    .title {
+        padding: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+
+    <h1 class="title">Visiting Dubai</h1>
+    <div class="content"> 
+        <p>Dubai is a captivating destination that offers a unique blend of modernity and tradition. From stunning skyscrapers to rich cultural experiences, here’s what you need to know when planning your visit.</p>
+        <h2>1. Best Time to Visit</h2>
+        <li><strong>Winter (November to March):</strong>This is the peak tourist season, with mild temperatures averaging between <strong>24°C and 28°C</strong> (75°F to 82°F). Ideal for outdoor activities, sightseeing, and festivals.</li>
+        <li><strong>Summer (June to September): </strong>Extremely hot, with temperatures exceeding <strong>40°C </strong>(104°F). While indoor attractions are air-conditioned, outdoor activities are best avoided during the peak hours of the day.</li>
+
+        <h2>2. Getting There</h2>
+        <li><strong>Flights:</strong>Dubai International Airport (DXB) is a major global hub, with direct flights from many international destinations.</li>
+        <li><strong>Visa Requirements:</strong>Check visa requirements based on your nationality. Many travelers can obtain a visa on arrival or apply for an e-visa in advance.</li>
+
+        <h2>3. Transportation</h2>
+        <li><strong>Public Transport: </strong>The Metro is an efficient way to navigate the city, connecting key areas. Taxis and ride-sharing services are widely available and convenient.</li>
+        <li><strong>Car Rental:</strong>Renting a car is an option for those who prefer flexibility, but be aware of local driving customs and parking regulations.</li>
+
+        <h2>4. Accommodation</h2>
+        <p><strong>Variety of Options: </strong>Dubai offers a range of accommodations, from luxury hotels like the Burj Al Arab to budget-friendly options. Booking in advance is advisable, especially during peak season.</p>
+
+        <h2>5. Things to Do</h2>
+        <li><strong>Iconic Attractions:</strong>Visit the Burj Khalifa, the world’s tallest building, and explore the Dubai Mall, home to shopping, dining, and attractions like an indoor aquarium.</li>
+        <li><strong>Cultural Experiences:</strong>Discover the historic Al Fahidi District, visit the Dubai Museum, and take a traditional abra ride across Dubai Creek.</li>
+        <li><strong>Adventure Activities:</strong>Enjoy desert safaris, dune bashing, and indoor skiing at Ski Dubai for a mix of adventure and leisure.</li>
+
+        <h2>6. Shopping and Dining</h2>
+        <li><strong>Shopping:</strong>From luxury boutiques to traditional souks, Dubai is a shopper’s paradise. Don’t miss the annual Dubai Shopping Festival for great deals.</li>
+        <li><strong>Dining:</strong>The culinary scene is diverse, offering everything from street food to fine dining. Explore various cuisines, including Middle Eastern, Asian, and international flavors.</li>
+
+        <h2>7. Cultural Etiquette</h2>
+        <p><strong>Respect Local Customs:</strong>Dress modestly, especially in public places and religious sites. Be mindful of Islamic practices, particularly during Ramadan.</p>
+
+        <h2>Conclusion</h2>
+        <p>Visiting Dubai promises an unforgettable experience filled with adventure, culture, and luxury. By planning ahead and being mindful of local customs, you can make the most of your trip to this dynamic city, creating lasting memories along the way.</p>
+
+
+    </div>
+
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://etimg.etb2bimg.com/photo/112371682.cms" alt="photo 1">
+        </div>
+            <div class="photo" id="p2">
+                <img src="https://media.cntraveler.com/photos/5b44b3a698650440f2835b9b/16:9/w_2560,c_limit/Al%20Fahidi%20Historical%20Neighbourhood_shutterstock_675842104.jpg" alt="photo 2">
+            </div>
+        </a>
+        <div class="photo" id="p3">
+            <img src="https://media1.thrillophilia.com/filestore/jht5f4yzo8dr2k7i49s9vfg69clz_1562310436_ski_dubai.jpg?w=400&dpr=2" alt="photo 3">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .topnav {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .topnav h1 {
+            font-size: 30px;
+            padding: 20px 25px;
+            display: block; 
+        }
+
+        
+        ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+
+ul li {
+    display: inline-block; 
+    position: relative; 
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%; 
+    background: #ce96ff; 
+    position: absolute; 
+    z-index: 999; /* Ensure dropdown is above other content */
+    display: none; 
+}
+
+ul li a:hover {
+    background: #bb6eff; 
+}
+
+ul li:hover ul.dropdown {
+    display: block; 
+}
+        .signin {
+            left: 610px;
+        }
+
+        .slider {
+            position: absolute;
+            top: 130px;
+            right: 20px;
+            width: 700px; 
+            margin-top: 20px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .slides {
+            position: relative;
+        }
+
+        .slide {
+            display: none; 
+            width: 100%;
+            height: 400px; 
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        input[type="radio"] {
+            display: none; 
+        }
+
+        #slide1:checked ~ .slides #s1,
+        #slide2:checked ~ .slides #s2,
+        #slide3:checked ~ .slides #s3,
+        #slide4:checked ~ .slides #s4,
+        #slide5:checked ~ .slides #s5 {
+            display: block; 
+        }
+
+        .nav-dots {
+            position: absolute; 
+            bottom: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            display: flex; 
+            gap: 5px; 
+        }
+
+        .dot {
+            height: 20px;
+            width: 20px;
+            background-color: #bbb; 
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        .dot:hover {
+            background-color: #717171; 
+        }
+
+        input[type="radio"]:checked + .nav-dots .dot {
+            background-color: #717171; 
+        }
+
+        .social-media-box {
+            position: relative;
+            top: 410px; 
+            left: 350px; 
+            width: 657px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: #d9d9d9;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto; 
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease;
+            width: 300px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            background-color: white;
+            color: black; 
+        }
+
+        .intro {
+            position: absolute;
+            top: 115px;
+            margin-top: 20px;
+            padding: 20px; 
+            max-width: 655px; 
+        }
+
+        h1 {
+            text-align: center;
+            size: 35px;
+        }
+
+        h2 {
+            text-align: center;
+            size: 25px;
+        }
+
+        .contact-box {
+            background-color: #d9d9d9;
+            padding: 40px;
+            width: 590px;
+            text-align: center;
+            position: absolute; 
+            top: 548px;
+            left: 20px; 
+            margin-top: 20px;
+        }
+
+        .contact-title {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 12px 24px; 
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 24px; 
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+            background-color: black;
+            cursor: pointer;
+        }
+        .contact-button:hover {
+            transform: translateY(-5px);
+            background-color: white;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        
+        <div class="slides">
+            <div class="slide" id="s1">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMhZHty7YveB6TF4xLw3zP72em4APHzAq-ViR7n=w540-h312-n-k-no" alt="Image 1">
+            </div>
+            <div class="slide" id="s2">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT06eOer0paFAdNIsveeqQjH1QmE1EcBeBSTBUtv876i4R4LgGid9yyOT5Rry0rPlSkXc9R2EDEz7tiLFftSmPkm4rtCPJHRp79CR-Tvg" alt="Image 2">
+            </div>
+            <div class="slide" id="s3">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR32DOkB4eh-mM6-xGSEJjyLYMNT9GCLUnAeTtTDhX6G617SrDxOCulSCY00AX9b4lalD_s61kLaLgVAKshSPSVPwD7PHkOIhqV2oDkKG8" alt="Image 3">
+            </div>
+            <div class="slide" id="s4">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTxzN1PSwFG8rPlDDEbIGyeVG1ff4l7iAv-7FO8XdZoRGqLR1DEDqAiFWQxIRNPzpXRWDTaipK23RR3_UB66cuS_6kjlTTiaU9emn2HSQ" alt="Image 4">
+            </div>
+            <div class="slide" id="s5">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPkiFNo4E5CVdZQ_2_XLrwgpJvAQAkwK4598IF2=w1080-h624-n-k-no" alt="Image 5">
+            </div>
+        </div>
+
+        <div class="nav-dots">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+            <label for="slide4" class="dot"></label>
+            <label for="slide5" class="dot"></label>
+        </div>
+    </div>
+
+    <div class="social-media-box">
+        <h2>Social Media</h2>
+        <a href="https://www.instagram.com" target="_blank">
+            <button class="button">Instagram</button>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <button class="button">TikTok</button>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <button class="button">Twitter</button>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <button class="button">Facebook</button>
+        </a>
+    </div>
+
+    <div class="intro">
+        <h1>Living In Dubai</h1>
+        <h2>Moving to a new country can be both exciting and challenging, and Dubai is no exception. Our website is here to guide you through this vibrant city, offering essential information tailored specifically for expats. From understanding local laws and regulations to navigating the cost of living and adapting to the unique climate, we provide the resources you need to make your transition smooth and enjoyable. Dive into our sections to get started on your adventure in one of the world's most dynamic cities!</h2>
+    </div>
+
+    <div class="contact-box">
+        <div class="contact-title">Contact Us</div>
+        <a href="contact.html" class="contact-button">Get in Touch</a>
+    </div>
+
+    
+</body>
+</html>

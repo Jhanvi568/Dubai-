@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities and Bills</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .topnav {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .topnav h1 {
+        font-size: 30px;
+        padding: 20px 25px;
+        display: block;
+    }
+
+    ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+    ul li ul.dropdown {
+        width: 100%; 
+        background: #ce96ff; 
+        position: absolute; 
+        z-index: 999;
+        display: none; 
+    }
+
+    ul li a:hover {
+        background: #bb6eff; 
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+
+    .signin {
+        left: 610px;
+    }
+
+    .photos {
+        position: absolute;
+        margin: 20px 0; 
+        top: 237px;
+        right: 20px; 
+    }
+
+    .photo {
+        display: block;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 20px; 
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px 0; 
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        user-select: none; 
+        font-size: 20px;
+    }
+
+    .title {
+        padding: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+
+    <h1 class="title">Utilities and Bills </h1>
+    <div class="content"> 
+        <p>Understanding the cost of utilities and bills is essential for residents in Dubai, whether you’re renting or buying a home. Here’s what you need to know:</p>
+        <h2>1. Electricity and Water</h2>
+        <li><strong>Provider:</strong>Dubai Electricity and Water Authority (DEWA) is the main utility provider.</li>
+        <li><strong></strong>Average Costs:</li>
+        <li>Monthly bills can range from <strong>400 to 1,200 AED</strong> depending on the size of the property and usage.</li>
+        <li>A typical one-bedroom apartment might incur costs of around <strong>600 to 800 AED</strong> per month.</li>
+        <li><strong>Tariff Structure:</strong> DEWA charges are based on consumption, with higher rates for higher usage. Residential rates start at around <strong>0.23 AED </strong>per kWh for electricity and <strong>1.60 AED</strong> per cubic meter for water.</li>
+<br>
+        <h2>2. Internet and Phone Services</h2>
+        <p><strong>Providers:</strong>Major providers include Du and Etisalat.</p>
+        <p><strong>Average Costs:</strong></p>
+        <li>Internet packages typically range from <strong>300 to 600 AED</strong> per month for standard speeds (up to 1 Gbps).</li>
+        <li>Mobile phone plans can vary widely, with prepaid options starting around <strong>50 AED</strong> and postpaid plans averaging <strong>150 to 300 AED</strong> per month.</li>
+        <br>
+        <h2>3. Cooling Costs</h2>
+        <p><strong>Air Conditioning:</strong>Given Dubai's hot climate, air conditioning can significantly impact utility bills.</p>
+        <p><strong>Average Cooling Costs:</strong>Monthly cooling costs can add an additional <strong>300 to 800 AED,</strong> depending on usage and efficiency of the system.</p>
+        <br>
+        <h2>4. Gas Supply</h2>
+        <p><strong>Provider:</strong>Gas is typically supplied through cylinders or piped systems, managed by various local providers.</p>
+        <p><strong>Average Costs:</strong>Renting a gas cylinder costs around <strong>50 to 100 AED</strong> and lasts about one month for a small household.</p>
+        <br>
+        <h2>5. Service Charges</h2>
+        <p><strong>Apartments and Villas:</strong>Most residential buildings charge an annual service fee covering maintenance, security, and amenities.</p>
+        <p><strong>Average Costs:</strong>Service charges can range from <strong>10 to 15 AED</strong> per square foot annually. For example, a 1,000 sq. ft. apartment might incur service charges between <strong>10,000 and 15,000 AED</strong> per year.</p>
+        <br>
+        <h2>6. Total Monthly Expenses</h2>
+        <p><strong>Estimated Monthly Utilities:</strong>For a one-bedroom apartment, total monthly utility costs (electricity, water, internet, and gas) could range from <strong>1,500 to 2,500 AED.</strong> This includes:</p>
+        <li>Electricity and Water: <strong>600 to 800 AED</strong></li>
+        <li>Internet <strong>300 to 600 AED</strong></li>
+        <li>Cooling: <strong>300 to 800 AED</strong></li>
+        <li>Gas:<strong>50 to 100 AED</strong></li>
+        <br>
+        <h2>Conclusion</h2>
+        <p>Understanding utility costs in Dubai is crucial for budgeting as a resident. With a mix of fixed and variable expenses, planning ahead will help you manage your monthly bills effectively. By choosing energy-efficient appliances and being mindful of consumption, you can reduce your utility costs while enjoying the comforts of living in this vibrant city.</p>
+
+
+
+
+    </div>
+
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://www.dewa.gov.ae/-/media/Images/News-And-Events/2013/0900000a811e2c29.ashx" alt="photo 1">
+        </div>
+            <div class="photo" id="p2">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2024/07/wifirouters-2048px-3572.jpg" alt="photo 2">
+            </div>
+        </a>
+        <div class="photo" id="p3">
+            <img src="https://campaignme.com/wp-content/uploads/2022/06/Website-Format-58.jpg" alt="photo 3">
+        </div>
+    </div>
+
+</body>
+</html>

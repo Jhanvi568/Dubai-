@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .signup-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .form-group button {
+        background-color: #ce96ff;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .form-group button:hover {
+        background-color: #bb6eff;
+      }
+
+      .form-group .terms {
+        font-size: 0.8rem;
+        margin-top: 10px;
+      }
+
+      .form-group .terms input {
+        margin-right: 5px;
+      }
+
+      .form-group .terms label {
+        display: inline;
+      }
+
+      .form-group .terms a {
+        color: #e50914;
+        text-decoration: none;
+      }
+
+      .form-group .terms a:hover {
+        text-decoration: underline;
+      }
+
+      /* Modal Styles using :target */
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 90%;
+        max-height: 80%;
+        overflow-y: auto;
+        text-align: left;
+      }
+
+      .modal-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .modal-content p {
+        line-height: 1.6;
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #aaa;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-form">
+      <h2>Create Your Account</h2>
+      <form action="welcome.html" method="post"> 
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <a href="welcome.html"><button type="submit">Sign Up</button></a>
+        </div>
+        <div class="form-group terms">
+          <input type="checkbox" id="agreeTerms" required>
+          <label for="agreeTerms">I agree to the <a href="#termsModal">terms of service</a> and <a href="#privacyModal">privacy policy</a>.</label>
+        </div>
+      </form>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="location.href='#'">&times;</span>
+        <h2>Terms of Service</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis magna quis justo ullamcorper, at efficitur nisi maximus. Mauris nec scelerisque libero.</p>
+        <p>Integer sit amet urna sed turpis eleifend volutpat nec nec erat. Nullam quis arcu at erat laoreet luctus non in nisi.</p>
+      </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="location.href='#'">&times;</span>
+        <h2>Privacy Policy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis magna quis justo ullamcorper, at efficitur nisi maximus. Mauris nec scelerisque libero.</p>
+        <p>Integer sit amet urna sed turpis eleifend volutpat nec nec erat. Nullam quis arcu at erat laoreet luctus non in nisi.</p>
+      </div>
+    </div>
+  </body>
+</html>

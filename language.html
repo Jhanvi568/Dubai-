@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher with Translations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .language-switcher {
+            margin-bottom: 20px;
+        }
+        .lang {
+            display: none; 
+        }
+        
+        #lang-en:checked ~ .content #english,
+        #lang-fr:checked ~ .content #french,
+        #lang-hi:checked ~ .content #hindi,
+        #lang-ar:checked ~ .content #arabic {
+            display: block; 
+        }
+        
+        .radio-label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="language-switcher">
+    <input type="radio" id="lang-en" name="language" checked>
+    <label class="radio-label" for="lang-en">English</label>
+    
+    <input type="radio" id="lang-fr" name="language">
+    <label class="radio-label" for="lang-fr">French</label>
+    
+    <input type="radio" id="lang-hi" name="language">
+    <label class="radio-label" for="lang-hi">Hindi</label>
+    
+    <input type="radio" id="lang-ar" name="language">
+    <label class="radio-label" for="lang-ar">Arabic</label>
+</div>
+
+<div class="content">
+    <div id="english" class="lang">
+        <p>Hello! Welcome to our website.</p>
+    </div>
+    <div id="french" class="lang">
+        <p>Bonjour! Bienvenue sur notre site Web.</p>
+    </div>
+    <div id="hindi" class="lang">
+        <p>नमस्ते! हमारी वेबसाइट पर आपका स्वागत है।</p>
+    </div>
+    <div id="arabic" class="lang">
+        <p>مرحبًا! مرحبًا بك في موقعنا على الويب.</p>
+    </div>
+</div>
+
+</body>
+</html>

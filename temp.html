@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .topnav {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .topnav h1 {
+        font-size: 30px;
+        padding: 20px 25px;
+        display: block;
+    }
+
+    
+    ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+    
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+    ul li ul.dropdown {
+        width: 100%; 
+        background: #ce96ff; 
+        position: absolute; 
+        z-index: 999;
+        display: none; 
+    }
+
+    ul li a:hover {
+        background: #bb6eff; 
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+
+    .signin {
+        left: 610px;
+    }
+
+    .photos {
+        position: absolute;
+        margin: 20px 0; 
+        top: 237px;
+        right: 20px; 
+    }
+
+    .photo {
+        display: block;
+        width: 100%;
+        height: 345px;
+        overflow: hidden;
+        margin-bottom: 20px; 
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 20px 0; 
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        user-select: none; 
+        font-size: 20px;
+    }
+
+    .title {
+        padding: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+
+    <h1 class="title">Temperature</h1>
+    <div class="content"> 
+        <p>Dubai has a hot desert climate characterized by high temperatures and low humidity levels. Understanding the temperature variations throughout the year can help visitors plan their activities effectively.</p>
+        <h2>1. Summer (June to September)</h2>
+        <li><strong>Temperature:</strong>Average high temperatures range from <strong>40°C to 45°C</strong> (104°F to 113°F). Nighttime temperatures can still be warm, hovering around <strong>30°C</strong> (86°F).</li>
+        <li><strong>Conditions:</strong>The summer months are extremely hot, particularly in July and August. Humidity levels can rise, making it feel even hotter. Outdoor activities are best avoided during peak daytime hours, typically from <strong>12 PM to 4 PM.</strong></li>
+        <li><strong>Tip:</strong>If visiting during summer, stay hydrated and seek air-conditioned environments.</li>
+<br>
+        <h2>2. Autumn (October to November)</h2>
+        <li><strong>Temperature:</strong>Average highs drop to between <strong>30°C and 35°C</strong> (86°F to 95°F) in October and continue to cool in November.</li>
+        <li><strong>Conditions:</strong>The weather becomes significantly more pleasant, making it a great time for outdoor activities, festivals, and events. Nights are cooler, providing a comfortable atmosphere for evening outings.</li>
+        <li><strong>Tip:</strong>This is an excellent time for outdoor dining and exploring the city’s attractions.</li>
+<br>
+        <h2>3. Winter (December to February)</h2>
+        <li><strong>Temperature:</strong>Average highs range from <strong>24°C to 28°C </strong> (75°F to 82°F), with cooler nights that can drop to around <strong>14°C </strong> (57°F).</li>
+        <li><strong>Conditions:</strong>Winter is mild and comfortable, making it the peak tourist season. It’s perfect for sightseeing, shopping, and enjoying outdoor activities without the oppressive heat.</li>
+        <li><strong>Tip: </strong>Consider layering clothing for cooler evenings, especially if you plan to spend time outdoors.</li>
+<br>
+        <h2>4. Spring (March to May)</h2>
+        <li><strong>Temperature: </strong>Average highs range from <strong>30°C to 37°C </strong> (86°F to 99°F) as spring progresses.</li>
+        <li><strong>Conditions:</strong>While temperatures start to rise, the weather is still manageable in March and early April. By late April and May, the heat intensifies, foreshadowing the summer months.</li>
+        <li><strong>Tip:</strong>Engage in early morning or late afternoon activities to avoid the midday heat.</li>
+<br>
+        <h2>Conclusion</h2>
+        <p>Dubai’s temperature varies significantly throughout the year, with scorching summers and mild winters. Being aware of these seasonal changes can enhance your experience, allowing you to enjoy the city’s vibrant attractions comfortably. Whether you prefer the cooler winter months or can handle the summer heat, Dubai offers unique experiences year-round. To learn more about this topic press the second photo to be directed to the UAE government website.</p>
+
+    </div>
+
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://tripventura.com/cdn/shop/articles/KGF-2-scaled.jpg?v=1713996747&width=1100" alt="photo 1">
+        </div>
+        <a href="https://u.ae/en/information-and-services/environment-and-energy/weather-conditions-and-environmental-status" target="_blank">
+            <div class="photo" id="p2">
+                <img src="https://offloadmedia.feverup.com/secretdubai.co/wp-content/uploads/2018/10/17084322/fsdf-1-1024x597.jpg" alt="photo 2">
+            </div>
+        </a>
+        <div class="photo" id="p3">
+            <img src="https://images.myguide-cdn.com/dubai/companies/dubai-marvels-tour-miracle-garden-global-village-all-in/large/dubai-marvels-tour-miracle-garden-global-village-all-in-2117021.jpg" alt="photo 3">
+        </div>
+    </div>
+
+</body>
+</html>

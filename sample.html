@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .topnav {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .topnav h1 {
+            font-size: 30px;
+            padding: 20px 25px;
+            display: block;
+            text-align: center;
+        }
+
+        .language-selector {
+    position: relative;
+    top: 15px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+.language-selector .dropdown {
+    display: none;
+    position: absolute;
+    background: #007BFF; 
+    right: 0; /* Position relative to its container */
+    margin-top: 5px;
+    z-index: 1100; /* Higher than other dropdowns */
+    border-radius: 5px;
+    width: 150px; 
+}
+
+.language-selector .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff; 
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    width: 100%; 
+}
+
+.language-selector .dropdown a:hover {
+    background: #0056b3;
+}
+
+.language-selector:hover .dropdown {
+    display: block;
+}
+
+ul li:hover > ul.dropdown {
+    display: block;
+    z-index: 100; /* Lower than the language selector */
+}
+
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff; 
+            text-decoration: none;
+            text-align: left;
+            font-size: 16px;
+            width: 100%; 
+        }
+
+        .dropdown a:hover {
+            background: #0056b3;
+        }
+
+        .language-selector:hover .dropdown {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+            background: #ce96ff; 
+        }
+
+        ul li {
+            display: inline-block; 
+            position: relative; 
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #000000;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+        ul li ul.dropdown {
+            width: 100%; 
+            background: #ce96ff; 
+            position: absolute; 
+            z-index: 999;
+            display: none; 
+        }
+
+        ul li a:hover {
+            background: #bb6eff; 
+        }
+
+        .signin {
+            left: 610px;
+        }
+
+        .photos {
+            position: absolute;
+            margin: 20px 0; 
+            top: 237px;
+            right: 20px; 
+        }
+
+        .photo {
+            display: block;
+            width: 100%;
+            height: 335px;
+            overflow: hidden;
+            margin-bottom: 20px; 
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px 0; 
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            user-select: none; 
+            font-size: 20px;
+        }
+
+        .title {
+            padding: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+        <div class="language-selector">
+            Select Language
+            <div class="dropdown">
+                <a href="#" onclick="document.querySelector('.english').style.display='block'; document.querySelector('.arabic').style.display='none'; document.querySelector('.spanish').style.display='none'; document.querySelector('.hindi').style.display='none';">English</a>
+                <a href="#" onclick="document.querySelector('.arabic').style.display='block'; document.querySelector('.english').style.display='none'; document.querySelector('.spanish').style.display='none'; document.querySelector('.hindi').style.display='none';">عربى</a>
+                <a href="#" onclick="document.querySelector('.spanish').style.display='block'; document.querySelector('.english').style.display='none'; document.querySelector('.arabic').style.display='none'; document.querySelector('.hindi').style.display='none';">Español</a>
+                <a href="#" onclick="document.querySelector('.hindi').style.display='block'; document.querySelector('.english').style.display='none'; document.querySelector('.arabic').style.display='none'; document.querySelector('.spanish').style.display='none';">हिन्दी</a>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+
+    <h1 class="title">Visiting Dubai</h1>
+    
+    <div class="content english">
+        <p>Dubai is a captivating destination that offers a unique blend of modernity and tradition. From stunning skyscrapers to rich cultural experiences, here’s what you need to know when planning your visit.</p>
+        <h2>1. Best Time to Visit</h2>
+        <p><strong>Winter (November to March):</strong> This is the peak tourist season, with mild temperatures averaging between <strong>24°C and 28°C</strong> (75°F to 82°F). Ideal for outdoor activities, sightseeing, and festivals.</p>
+        <p><strong>Summer (June to September):</strong> Extremely hot, with temperatures exceeding <strong>40°C</strong> (104°F). While indoor attractions are air-conditioned, outdoor activities are best avoided during the peak hours of the day.</p>
+
+        <h2>2. Getting There</h2>
+        <p><strong>Flights:</strong> Dubai International Airport (DXB) is a major global hub, with direct flights from many international destinations.</p>
+        <p><strong>Visa Requirements:</strong> Check visa requirements based on your nationality. Many travelers can obtain a visa on arrival or apply for an e-visa in advance.</p>
+
+        <h2>3. Transportation</h2>
+        <p><strong>Public Transport:</strong> The Metro is an efficient way to navigate the city, connecting key areas. Taxis and ride-sharing services are widely available and convenient.</p>
+        <p><strong>Car Rental:</strong> Renting a car is an option for those who prefer flexibility, but be aware of local driving customs and parking regulations.</p>
+
+        <h2>4. Accommodation</h2>
+        <p><strong>Variety of Options:</strong> Dubai offers a range of accommodations, from luxury hotels like the Burj Al Arab to budget-friendly options. Booking in advance is advisable, especially during peak season.</p>
+
+        <h2>5. Things to Do</h2>
+        <p><strong>Iconic Attractions:</strong> Visit the Burj Khalifa, the world’s tallest building, and explore the Dubai Mall, home to shopping, dining, and attractions like an indoor aquarium.</p>
+        <p><strong>Cultural Experiences:</strong> Discover the historic Al Fahidi District, visit the Dubai Museum, and take a traditional abra ride across Dubai Creek.</p>
+        <p><strong>Adventure Activities:</strong> Enjoy desert safaris, dune bashing, and indoor skiing at Ski Dubai for a mix of adventure and leisure.</p>
+
+        <h2>6. Shopping and Dining</h2>
+        <p><strong>Shopping:</strong> From luxury boutiques to traditional souks, Dubai is a shopper’s paradise. Don’t miss the annual Dubai Shopping Festival for great deals.</p>
+        <p><strong>Dining:</strong> The culinary scene is diverse, offering everything from street food to fine dining. Explore various cuisines, including Middle Eastern, Asian, and international flavors.</p>
+
+        <h2>7. Cultural Etiquette</h2>
+        <p><strong>Respect Local Customs:</strong> Dress modestly, especially in public places and religious sites. Be mindful of Islamic practices, particularly during Ramadan.</p>
+
+        <h2>Conclusion</h2>
+        <p>Visiting Dubai promises an unforgettable experience filled with adventure, culture, and luxury. By planning ahead and being mindful of local customs, you can make the most of your trip to this dynamic city, creating lasting memories along the way.</p>
+    </div>
+
+    <div class="content arabic">
+        <p>دبي هي وجهة ساحرة تقدم مزيجًا فريدًا من الحداثة والتقاليد. من ناطحات السحاب المذهلة إلى التجارب الثقافية الغنية، إليك ما تحتاج لمعرفته عند التخطيط لزيارتك.</p>
+        <h2>1. أفضل وقت للزيارة</h2>
+        <p><strong>الشتاء (نوفمبر إلى مارس):</strong> هذه هي ذروة موسم السياحة، مع درجات حرارة معتدلة تتراوح بين <strong>24°C و 28°C</strong> (75°F إلى 82°F). مثالي للأنشطة الخارجية، والمعالم السياحية، والمهرجانات.</p>
+        <p><strong>الصيف (يونيو إلى سبتمبر):</strong> شديد الحرارة، مع درجات حرارة تتجاوز <strong>40°C</strong> (104°F). بينما تكون المعالم الداخلية مكيفة الهواء، يجب تجنب الأنشطة الخارجية خلال ساعات الذروة.</p>
+
+        <h2>2. الوصول إلى هناك</h2>
+        <p><strong>الرحلات الجوية:</strong> مطار دبي الدولي (DXB) هو مركز عالمي رئيسي، مع رحلات مباشرة من العديد من الوجهات الدولية.</p>
+        <p><strong>متطلبات التأشيرات:</strong> تحقق من متطلبات التأشيرات بناءً على جنسيتك. يمكن للعديد من المسافرين الحصول على تأشيرة عند الوصول أو التقدم بطلب للحصول على تأشيرة إلكترونية مسبقًا.</p>
+
+        <h2>3. وسائل النقل</h2>
+        <p><strong>المواصلات العامة:</strong> يعد المترو وسيلة فعالة للتنقل في المدينة، حيث يربط بين المناطق الرئيسية. تتوفر سيارات الأجرة وخدمات مشاركة الركوب على نطاق واسع ومريحة.</p>
+        <p><strong>تأجير السيارات:</strong> يعد تأجير سيارة خيارًا لأولئك الذين يفضلون المرونة، ولكن كن على دراية بعادات القيادة المحلية ولوائح وقوف السيارات.</p>
+
+        <h2>4. أماكن الإقامة</h2>
+        <p><strong>تنوع الخيارات:</strong> تقدم دبي مجموعة من أماكن الإقامة، من الفنادق الفاخرة مثل برج العرب إلى الخيارات المناسبة للميزانية. من المستحسن الحجز مسبقًا، خاصة خلال موسم الذروة.</p>
+
+        <h2>5. الأنشطة</h2>
+        <p><strong>المعالم الشهيرة:</strong> زيارة برج خليفة، أطول مبنى في العالم، واستكشاف دبي مول، موطن التسوق، وتناول الطعام، وجذب مثل حوض السمك الداخلي.</p>
+        <p><strong>التجارب الثقافية:</strong> اكتشاف منطقة الفهيدي التاريخية، زيارة متحف دبي، وركوب العبرة التقليدية عبر خور دبي.</p>
+        <p><strong>الأنشطة المغامرات:</strong> الاستمتاع برحلات السفاري الصحراوية، وتجاوز الكثبان الرملية، والتزلج الداخلي في سكي دبي لمزيج من المغامرة والترفيه.</p>
+
+        <h2>6. التسوق وتناول الطعام</h2>
+        <p><strong>التسوق:</strong> من البوتيكات الفاخرة إلى الأسواق التقليدية، تعتبر دبي جنة للمتسوقين. لا تفوت مهرجان دبي للتسوق السنوي للحصول على عروض رائعة.</p>
+        <p><strong>تناول الطعام:</strong> مشهد الطهي متنوع، ويقدم كل شيء من الطعام الشارعي إلى تناول الطعام الفاخر. استكشف مختلف المطابخ، بما في ذلك النكهات الشرق أوسطية والآسيوية والدولية.</p>
+
+        <h2>7. آداب الثقافة</h2>
+        <p><strong>احترام العادات المحلية:</strong> ارتدِ ملابس متواضعة، خاصة في الأماكن العامة والأماكن الدينية. كن مدركًا للممارسات الإسلامية، خاصة خلال شهر رمضان.</p>
+
+        <h2>الخاتمة</h2>
+        <p>تعد زيارة دبي تجربة لا تُنسى مليئة بالمغامرة والثقافة والرفاهية. من خلال التخطيط المسبق والانتباه للعادات المحلية، يمكنك الاستفادة القصوى من رحلتك إلى هذه المدينة الديناميكية، مما يخلق ذكريات دائمة على طول الطريق.</p>
+    </div>
+
+    <div class="content spanish">
+        <p>Dubái es un destino cautivador que ofrece una mezcla única de modernidad y tradición. Desde impresionantes rascacielos hasta ricas experiencias culturales, aquí tienes lo que necesitas saber al planificar tu visita.</p>
+        <h2>1. Mejor época para visitar</h2>
+        <p><strong>Invierno (noviembre a marzo):</strong> Esta es la temporada turística más alta, con temperaturas suaves que oscilan entre <strong>24°C y 28°C</strong> (75°F a 82°F). Ideal para actividades al aire libre, turismo y festivales.</p>
+        <p><strong>Verano (junio a septiembre):</strong> Extremadamente caluroso, con temperaturas que superan <strong>40°C</strong> (104°F). Aunque las atracciones interiores tienen aire acondicionado, las actividades al aire libre deben evitarse durante las horas pico del día.</p>
+
+        <h2>2. Cómo llegar</h2>
+        <p><strong>Vuelos:</strong> El Aeropuerto Internacional de Dubái (DXB) es un importante centro global, con vuelos directos desde muchos destinos internacionales.</p>
+        <p><strong>Requisitos de visa:</strong> Verifica los requisitos de visa según tu nacionalidad. Muchos viajeros pueden obtener una visa a la llegada o solicitar una visa electrónica con antelación.</p>
+
+        <h2>3. Transporte</h2>
+        <p><strong>Transporte público:</strong> El metro es una forma eficiente de moverse por la ciudad, conectando áreas clave. Los taxis y servicios de transporte compartido están ampliamente disponibles y son convenientes.</p>
+        <p><strong>Alquiler de coches:</strong> Alquilar un coche es una opción para quienes prefieren flexibilidad, pero ten en cuenta las costumbres de conducción locales y las regulaciones de estacionamiento.</p>
+
+        <h2>4. Alojamiento</h2>
+        <p><strong>Variedad de opciones:</strong> Dubái ofrece una gama de alojamientos, desde hoteles de lujo como el Burj Al Arab hasta opciones económicas. Se recomienda reservar con antelación, especialmente durante la temporada alta.</p>
+
+        <h2>5. Cosas que hacer</h2>
+        <p><strong>Atracciones icónicas:</strong> Visita el Burj Khalifa, el edificio más alto del mundo, y explora el Dubai Mall, hogar de compras, restaurantes y atracciones como un acuario interior.</p>
+        <p><strong>Experiencias culturales:</strong> Descubre el histórico distrito de Al Fahidi, visita el Museo de Dubái y haz un paseo en abra tradicional por el arroyo de Dubái.</p>
+        <p><strong>Actividades de aventura:</strong> Disfruta de safaris por el desierto, conducción sobre dunas y esquí interior en Ski Dubái para una mezcla de aventura y ocio.</p>
+
+        <h2>6. Compras y gastronomía</h2>
+        <p><strong>Compras:</strong> Desde boutiques de lujo hasta zocos tradicionales, Dubái es un paraíso para los compradores. No te pierdas el Festival de Compras de Dubái anual para obtener grandes ofertas.</p>
+        <p><strong>Gastronomía:</strong> La escena culinaria es diversa, ofreciendo desde comida callejera hasta alta cocina. Explora diversas cocinas, incluyendo sabores del Medio Oriente, asiáticos e internacionales.</p>
+
+        <h2>7. Etiqueta cultural</h2>
+        <p><strong>Respeta las costumbres locales:</strong> Viste de manera modesta, especialmente en lugares públicos y sitios religiosos. Ten en cuenta las prácticas islámicas, particularmente durante el Ramadán.</p>
+
+        <h2>Conclusión</h2>
+        <p>Visitar Dubái promete una experiencia inolvidable llena de aventura, cultura y lujo. Al planificar con anticipación y ser consciente de las costumbres locales, puedes aprovechar al máximo tu viaje a esta dinámica ciudad, creando recuerdos duraderos en el camino.</p>
+    </div>
+
+    <div class="content hindi">
+        <p>दुबई एक आकर्षक गंतव्य है जो आधुनिकता और परंपरा का अद्वितीय मिश्रण प्रस्तुत करता है। शानदार गगनचुंबी इमारतों से लेकर समृद्ध सांस्कृतिक अनुभवों तक, यहाँ आपकी यात्रा की योजना बनाते समय जानने योग्य बातें हैं।</p>
+        <h2>1. यात्रा का सबसे अच्छा समय</h2>
+        <p><strong>सर्दी (नवंबर से मार्च):</strong> यह पर्यटकों का उच्चतम मौसम है, जिसमें तापमान औसतन <strong>24°C से 28°C</strong> (75°F से 82°F) के बीच होता है। बाहरी गतिविधियों, दर्शनीय स्थलों और त्योहारों के लिए आदर्श।</p>
+        <p><strong>गर्मी (जून से सितंबर):</strong> अत्यधिक गर्म, जिसमें तापमान <strong>40°C</strong> (104°F) से अधिक हो जाता है। जबकि इनडोर आकर्षण वातानुकूलित होते हैं, दिन के पीक घंटों में बाहरी गतिविधियों से बचना बेहतर होता है।</p>
+    
+        <h2>2. वहाँ कैसे पहुँचें</h2>
+        <p><strong>उड़ानें:</strong> दुबई अंतरराष्ट्रीय हवाई अड्डा (DXB) एक प्रमुख वैश्विक केंद्र है, जिसमें कई अंतरराष्ट्रीय गंतव्यों से सीधी उड़ानें हैं।</p>
+        <p><strong>वीजा आवश्यकताएँ:</strong> अपनी राष्ट्रीयता के आधार पर वीज़ा आवश्यकताओं की जांच करें। कई यात्री आगमन पर वीज़ा प्राप्त कर सकते हैं या पहले से ई-वीज़ा के लिए आवेदन कर सकते हैं।</p>
+    
+        <h2>3. परिवहन</h2>
+        <p><strong>सार्वजनिक परिवहन:</strong> मेट्रो शहर में नेविगेट करने का एक प्रभावी तरीका है, जो प्रमुख क्षेत्रों को जोड़ता है। टैक्सी और राइड-शेयरिंग सेवाएँ व्यापक रूप से उपलब्ध और सुविधाजनक हैं।</p>
+        <p><strong>कार रेंटल:</strong> कार किराए पर लेना उन लोगों के लिए एक विकल्प है जो लचीलापन पसंद करते हैं, लेकिन स्थानीय ड्राइविंग रिवाजों और पार्किंग नियमों के प्रति सतर्क रहें।</p>
+    
+        <h2>4. आवास</h2>
+        <p><strong>विभिन्न विकल्प:</strong> दुबई विभिन्न प्रकार के आवास प्रदान करता है, जैसे बर्ज अल अरब जैसे लग्जरी होटल से लेकर बजट के अनुकूल विकल्पों तक। विशेष रूप से पीक सीज़न के दौरान अग्रिम में बुकिंग करना सलाहकार है।</p>
+    
+        <h2>5. करने के लिए चीजें</h2>
+        <p><strong>प्रमुख आकर्षण:</strong> दुनिया की सबसे ऊँची इमारत बर्ज खलीफा का दौरा करें और दुबई मॉल का अन्वेषण करें, जो खरीदारी, भोजन और इनडोर एक्वेरियम जैसे आकर्षणों का घर है।</p>
+        <p><strong>सांस्कृतिक अनुभव:</strong> ऐतिहासिक अल फहीदी जिले का अन्वेषण करें, दुबई संग्रहालय का दौरा करें, और दुबई क्रीक पर पारंपरिक अबरा की सवारी करें।</p>
+        <p><strong>साहसिक गतिविधियाँ:</strong> साहसिकता और विश्राम के मिश्रण के लिए रेगिस्तान सफारी, ड्यून बैशिंग, और स्की दुबई में इनडोर स्कीइंग का आनंद लें।</p>
+    
+        <h2>6. खरीदारी और भोजन</h2>
+        <p><strong>खरीदारी:</strong> लग्जरी बुटीक से लेकर पारंपरिक सूकों तक, दुबई एक खरीदारी का स्वर्ग है। शानदार डील्स के लिए वार्षिक दुबई शॉपिंग फेस्टिवल को न चूकें।</p>
+        <p><strong>भोजन:</strong> खाद्य दृश्य विविध है, जो स्ट्रीट फूड से लेकर फाइन डाइनिंग तक सब कुछ पेश करता है। मध्य पूर्व, एशियाई, और अंतरराष्ट्रीय स्वादों सहित विभिन्न व्यंजनों का अन्वेषण करें।</p>
+    
+        <h2>7. सांस्कृतिक शिष्टाचार</h2>
+        <p><strong>स्थानीय रीति-रिवाजों का सम्मान करें:</strong> सार्वजनिक स्थानों और धार्मिक स्थलों पर विशेष रूप से विनम्रता से कपड़े पहनें। इस्लामिक प्रथाओं के प्रति जागरूक रहें, विशेष रूप से रमजान के दौरान।</p>
+    
+        <h2>निष्कर्ष</h2>
+        <p>दुबई की यात्रा एक अविस्मरणीय अनुभव का वादा करती है जो साहसिकता, संस्कृति, और विलासिता से भरी होती है। यदि आप पहले से योजना बनाते हैं और स्थानीय रीति-रिवाजों का ध्यान रखते हैं, तो आप इस गतिशील शहर की यात्रा का अधिकतम लाभ उठा सकते हैं, और इस दौरान यादगार क्षण बना सकते हैं।</p>
+    </div>
+
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://etimg.etb2bimg.com/photo/112371682.cms" alt="photo 1">
+        </div>
+        <div class="photo" id="p2">
+            <img src="https://media.cntraveler.com/photos/5b44b3a698650440f2835b9b/16:9/w_2560,c_limit/Al%20Fahidi%20Historical%20Neighbourhood_shutterstock_675842104.jpg" alt="photo 2">
+        </div>
+        <div class="photo" id="p3">
+            <img src="https://media1.thrillophilia.com/filestore/jht5f4yzo8dr2k7i49s9vfg69clz_1562310436_ski_dubai.jpg?w=400&dpr=2" alt="photo 3">
+        </div>
+    </div>
+
+</body>
+</html>

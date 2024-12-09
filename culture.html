@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Requirements</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body {
+        position: relative;
+    }
+    .topnav {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+    .topnav h1 {
+        font-size: 30px;
+        padding: 20px 25px;
+        display: block;
+    }
+    ul {
+    list-style: none;
+    background: #ce96ff; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    }
+    ul li {
+        display: inline-block; 
+        position: relative; 
+    }
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    ul li ul.dropdown {
+        width: 100%; 
+        background: #ce96ff; 
+        position: absolute; 
+        z-index: 999;
+        display: none; 
+    }
+    ul li a:hover {
+        background: #bb6eff; 
+    }
+    ul li:hover ul.dropdown {
+        display: block; 
+    }
+    .signin {
+        left: 610px;
+    }
+    .photos {
+        position: absolute;
+        margin: 20px 0; 
+        top: 237px;
+        right: 20px; /* Align images to the right */
+    }
+    .photo {
+        display: block; 
+        width: 100%;
+        height: 330px; 
+        overflow: hidden;
+        margin-bottom: 20px; 
+    }
+    .photo img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+    }
+    .content {
+        max-width: 800px;
+        margin: 20px 0; 
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        user-select: none;
+        font-size: 20px;
+    }
+    .title {
+        padding: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="topnav">
+        <h1>Living in Dubai</h1>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="law.html">Laws & Regulations</a>
+            <ul class="dropdown">
+                <li><a href="law.html">Laws & Regulations</a></li>
+                <li><a href="visa.html">Visa Requirements</a></li>
+                <li><a href="culture.html">Cultural Norms</a></li>
+                <li><a href="etiquette.html">Etiquette</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="weather.html">Weather Insights</a>
+            <ul class="dropdown">
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="temp.html">Temperature</a></li>
+                <li><a href="visit.html">Visiting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="cost.html">Cost of Living</a>
+            <ul class="dropdown">
+                <li><a href="cost.html">Cost of Living</a></li>
+                <li><a href="housing.html">Housing</a></li>
+                <li><a href="utilities.html">Utilities & Bills</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+        </li>
+        <li class="signin"><a href="signin.html" class="signin">Sign In</a></li> 
+    </ul>
+    <h1 class="title">Cultural Norms</h1>
+    <div class="content"> 
+        <p>Dubai blends modernity with tradition, and understanding its cultural norms is essential for a respectful visit.</p>
+        <h2>1. Respect for Religion</h2>
+        <li><strong>Islamic Practices:</strong> Islam is the official religion. Observe prayer times and be respectful during Ramadan, avoiding food and drink in public during daylight hours.</li>
+        <h2>2. Dress Code</h2>
+        <li><strong>Modesty:</strong> Dress modestly in public. Women should cover shoulders and knees, while men should avoid shorts above the knee, except at beaches and pools.</li>
+        <h2>3. Public Behavior</h2>
+        <li><strong>Social Etiquette:</strong> Public displays of affection are frowned upon. Handshakes are common, but wait for the other person to initiate, especially with women.</li>
+        <li><strong>Alcohol:</strong>Consumed only in licensed venues; public intoxication is prohibited.</li>
+        <h2>4. Dining Etiquette</h2>
+        <p><strong>Invitations:</strong>Remove shoes when entering a home. Accept food and drink when offered.</p>
+        <h2>5. Photography</h2>
+        <p><strong>Privacy:</strong>Always ask permission before taking photos of people, especially women and children.</p>
+        <h2>Conclusion</h2>
+        <p>By respecting these cultural norms, visitors can enjoy a positive experience in Dubai while honoring its rich traditions. To learn more press the second photo to be linked to the UAE government website.</p>
+    </div>
+    <div class="photos">
+        <div class="photo" id="p1">
+            <img src="https://blog.dubailocal.ae/wp-content/uploads/2023/06/Islamic-Prayers-in-Dubai-Overview.jpg" alt="photo 1">
+        </div>
+        <a href="https://u.ae/en/about-the-uae/culture" target="_blank">
+            <div class="photo" id="p2">
+                <img src="https://cdn2.hubspot.net/hubfs/2133673/UAE%20business-etiquette-1.jpg" alt="photo 2">
+            </div>
+        </a>
+        <div class="photo" id="p3">
+            <img src="https://www.thrillark.com/blog/wp-content/uploads/2024/02/Cultural-festivals-in-UAE-jpg.webp" alt="photo 3">
+        </div>
+    </div>
+</body>
+</html>
